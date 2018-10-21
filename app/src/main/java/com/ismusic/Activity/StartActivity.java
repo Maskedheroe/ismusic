@@ -14,9 +14,8 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.ismusic.Interface.IStartContract;
-import com.ismusic.Interface.IView;
 import com.ismusic.MainActivity;
-import com.ismusic.Persenter.StartPresenter;
+import com.ismusic.Presenter.StartPresenter;
 import com.ismusic.R;
 
 public class StartActivity extends AppCompatActivity implements IStartContract.View,View.OnClickListener {
@@ -42,6 +41,11 @@ public class StartActivity extends AppCompatActivity implements IStartContract.V
         coverImage = findViewById(R.id.cover_image);
         skipButton = findViewById(R.id.skip_button);
         skipButton.setOnClickListener(this);
+//        隐藏状态栏
+        View decorView = getWindow().getDecorView();
+        int option = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(option);
+
         startPresenter = new StartPresenter(this);
         Glide.with(this)
                 .load("https://bing.ioliu.cn/v1?w=1080&h=1920")
