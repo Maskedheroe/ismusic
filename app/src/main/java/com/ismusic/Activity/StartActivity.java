@@ -82,7 +82,7 @@ public class StartActivity extends AppCompatActivity implements IStartContract.V
         public void handleMessage(Message msg) {
             switch (msg.what){
                 case 1001:
-                    startActivity(new Intent(StartActivity.this,MainActivity.class));
+                    startActivity(new Intent(StartActivity.this,LoginActivity.class));
                     finish();
                     break;
                 case 1002:
