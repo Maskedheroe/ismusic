@@ -14,7 +14,6 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.ismusic.Interface.IStartContract;
-import com.ismusic.MainActivity;
 import com.ismusic.Presenter.StartPresenter;
 import com.ismusic.R;
 

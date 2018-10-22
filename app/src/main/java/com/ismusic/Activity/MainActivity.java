@@ -1,4 +1,4 @@
-package com.ismusic;
+package com.ismusic.Activity;
 
 import android.graphics.Color;
 import android.os.Build;
@@ -24,6 +24,7 @@ import com.ismusic.Adapter.ViewPagerAdapter;
 import com.ismusic.Fragment.HomeFragment;
 import com.ismusic.Interface.IMainContract;
 import com.ismusic.Model.Global;
+import com.ismusic.R;
 
 import java.util.ArrayList;
 import java.util.List;
