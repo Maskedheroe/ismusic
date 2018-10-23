@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/write"
+    >
+    <include layout="@layout/item_left_menu_top"/>
+
+   <android.support.v4.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:paddingTop="20dp"
+       android:padding="10dp"
+       >
+       <!--在此处添加menuitem-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+           <LinearLayout
+               android:id="@+id/ll_changeskin"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1.5"
+               android:orientation="horizontal"
+               android:padding="10dp"
+
+               >
+               <android.support.v7.widget.AppCompatImageView
+                   android:padding="5dp"
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:src="@drawable/menu_changeskin"
+                   />
+               <android.support.v7.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical"
+                   android:text="换肤"
+                   android:textSize="15sp"
+                   android:textColor="#111"
+                   android:paddingLeft="10dp"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/ll_setting"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1.5"
+               android:orientation="horizontal"
+               android:padding="10dp"
+
+               >
+               <android.support.v7.widget.AppCompatImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:padding="5dp"
+                   android:src="@drawable/menu_time"
+                   />
+               <android.support.v7.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical"
+                   android:text="定时"
+                   android:textSize="15sp"
+                   android:textColor="#111"
+                   android:paddingLeft="10dp"
+                   />
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/ll_time"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1.5"
+               android:orientation="horizontal"
+               android:padding="10dp"
+
+               >
+               <android.support.v7.widget.AppCompatImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:padding="5dp"
+                   android:src="@drawable/menu_setting"
+                   />
+               <android.support.v7.widget.AppCompatTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical"
+                   android:text="设置"
+                   android:textSize="15sp"
+                   android:textColor="#111"
+                   android:paddingLeft="10dp"
+                   />
+
+           </LinearLayout>
+       </LinearLayout>
+
+   </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

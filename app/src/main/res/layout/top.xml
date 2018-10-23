@@ -10,7 +10,7 @@
         android:id="@+id/left_menu"
         android:layout_marginTop="18dp"
         android:layout_marginBottom="18dp"
-        android:src="@drawable/menu"
+        android:src="@drawable/btn_menu"
         android:layout_gravity="center"
         android:layout_width="?attr/actionBarSize"
         android:layout_height="match_parent" />
@@ -20,7 +20,9 @@
         android:layout_toRightOf="@+id/left_menu"
         android:layout_toLeftOf="@+id/search"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:tabIndicatorColor="#fff"
+        >
 
     </android.support.design.widget.TabLayout>
 
@@ -29,7 +31,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="18dp"
         android:layout_marginBottom="18dp"
-        android:src="@drawable/search"
+        android:src="@drawable/btn_search"
         android:layout_width="?attr/actionBarSize"
         android:layout_height="match_parent" />
 </RelativeLayout>

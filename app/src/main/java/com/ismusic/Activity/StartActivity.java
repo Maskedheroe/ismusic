@@ -14,7 +14,6 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.ismusic.Interface.IStartContract;
-import com.ismusic.MainActivity;
 import com.ismusic.Presenter.StartPresenter;
 import com.ismusic.R;
 
@@ -83,7 +82,7 @@ public class StartActivity extends AppCompatActivity implements IStartContract.V
         public void handleMessage(Message msg) {
             switch (msg.what){
                 case 1001:
-                    startActivity(new Intent(StartActivity.this,MainActivity.class));
+                    startActivity(new Intent(StartActivity.this,LoginActivity.class));
                     finish();
                     break;
                 case 1002:
