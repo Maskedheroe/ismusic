@@ -11,7 +11,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.ismusic.Activity.MainActivity;
 import com.ismusic.Adapter.GedanAdapter;
 import com.ismusic.R;
@@ -32,6 +34,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_home,null,false);
         gedanListView=view.findViewById(R.id.list_gedan);
+        ImageView imageView =  view.findViewById(R.id.iv_testimage);
+        Glide.with(this).load(R.drawable.backgroudtest).into(imageView);
         addList();
         GridLayoutManager layoutManager = new GridLayoutManager(getActivity(),2);
         gedanListView.setLayoutManager(layoutManager);
