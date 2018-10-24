@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements IMainContract.Vie
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
         leftMenu.setOnClickListener(this);
+
+
     }
 
 
