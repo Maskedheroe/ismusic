@@ -8,35 +8,38 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="180dp">
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/image_avatar"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/backgroudtest"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_width="90dp"
-            android:layout_height="90dp" />
+            android:layout_height="90dp"
+            app:civ_border_width="1dp"
+            />
         <TextView
             android:id="@+id/user_name"
             android:text="@string/app_name"
             android:textSize="20sp"
             android:paddingTop="20dp"
             android:paddingLeft="10dp"
-            android:gravity="center_vertical"
+            android:gravity="start"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_toRightOf="@id/image_avatar"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
+
         <TextView
-            android:text="music@163.com"
-            android:padding="10dp"
-            android:layout_toRightOf="@id/image_avatar"
+            android:id="@+id/user_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/user_name"
-            android:layout_marginRight="20dp"
-            android:textSize="16sp"
-            android:layout_width="match_parent"
-            android:layout_height="40dp" />
-        <!-- test -->
+            android:layout_toRightOf="@id/image_avatar"
+            android:gravity="start"
+            android:padding="10dp"
+            android:text="music@163.com"
+            android:textSize="16sp" />
     </RelativeLayout>
 
 </android.support.v7.widget.CardView>
